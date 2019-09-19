@@ -9,4 +9,4 @@ def news(request):
     return HttpResponse("<h1>Nowości w barze</h1>")
 
 def lokal(request):
-    return HttpResponse("<h1>Lokalizacja baru</h1>")
+    return render(request, 'pizza/lokal.html')
